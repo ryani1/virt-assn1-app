@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request
 from redis import Redis
 
+# A small change
+
 application = Flask(__name__)
 redis = Redis(host='redis', port=6379)
 redis.set('yes', 0)
